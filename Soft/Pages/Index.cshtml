@@ -1,0 +1,128 @@
+﻿@page
+@model IndexModel
+@{ViewData["Title"] = "BDK Logistic";}
+
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+        <h1 class="display-4 ">BDK-LOGISTIC</h1>
+        <p class="lead my-3">BDK-LOGISTIC is one of the largest and most stable logistics companies in the European Union.</p>
+    </div>
+</div>
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">WHY BDK</h2>
+        <p class="lead">Our logistic centres meet the highest quality standards and are strategically set up in the most convenient locations in the region. Our developed distribution network allows companies to transport products across the Baltic and rest of the Europe.</p>
+
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" style="width: 500px; height: 500px;" src="/img/truck2.jpg">
+    </div>
+</div>
+
+<hr class="featurette-divider" style="margin-top: 50px; margin-bottom:10px">
+
+<div class=" jumbotron p-3 p-md-5 rounded bg-dark">
+    <div class="container">
+        <div class="card-deck mb-4 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h2 class="my-0 font-weight-normal">Road Transport</h2>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="/img/truck.jpg" width="100" height="250" />
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>
+                            We offer quality road freight services, with well-established and regular groupage lines to and from England, Ireland, Italy, Spain, Germany, Belgium, Netherlands, France and Hungary.
+                        </li>
+                    </ul>
+                        <a href="#land" class="btn btn-lg btn-outline-danger" role="button">Read more...</a>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h2 class="my-0 font-weight-normal">Sea Freights</h2>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="/img/ship.jpg" width="100" height="250" alt="product_image" />
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>We will ensure fast delivery of your cargo by sea. From anywhere in the world, your cargo will reach its destination as quickly and reliably as possible.</li>
+                    </ul>
+                    <a href="#sea" class="btn btn-lg btn-outline-danger" role="button">Read more...</a>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h2 class="my-0 font-weight-normal">Air Freight</h2>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="/img/airplane-travel-tip.jpg" width="100" height="250" alt="product_image" />
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Air freight is the fastest way to deliver cargo. The systematic nature of air flights allows you to accurately plan the time of cargo delivery.</li>
+                    </ul>
+                    <a href="#air" class="btn btn-lg btn-outline-danger" role="button">Read more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="featurette-divider" style="margin-top: 50px; margin-bottom:50px">
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h2 class="display-4">Make order</h2>
+    <p class="lead">Do you need transport for your cargo by road, sea or air, customised solutions for more demanding project forwarding cases or logistics solutions for your business? Are you interested in our company or the opportunities we can offer?</p>
+   
+    <a href="/Order/MakeOrder/Create" class="btn btn-lg btn-danger" role="button"><h3>ORDER</h3></a>
+</div>
+
+<hr class="featurette-divider" style="margin-top: 50px; margin-bottom:50px">
+
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 id="land" class="featurette-heading font-weight-bold">Land Transport</h2>
+        <p class="lead">Road transportation from Transcom Finland is a trucking of cargo of any complexity in the shortest possible time. We will always select the most suitable transport and make the best route.</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <h4 class="font-weight-bold">Refrigerated transport</h4>
+                <p>For your refrigerated transport needs we offer you driver accompanied trucks and a range of equipment including standard trailers, double stock trailers and double compartment trailers with more temperature zones as well as equipment prepared for pharmaceuticals. We also have suitable temperature-controlled storage facilities for refrigerated goods and pharmaceuticals at your disposal.</p>
+                <p>With us, you benefit from our personalized service and the extensive knowledge of the market and refrigerated transport that we have gathered since 1985.</p>
+            </div>
+            <div class="col-sm-4">
+
+                <h4 class="font-weight-bold">Express transportation</h4>
+                <p>When time is of the essence, our Express transportation services take care of your smaller and larger deliveries.</p>
+                <p>Express transportation has the speed of air freight and the flexibility of road transport. Even if the need arises suddenly and after office hours, we make sure that your cargo is delivered from door to door. Additional advantage to Express transportation is the size of the delivery: unlike with air freight or regular express freight, FREJA has set no strict limitations to the size of the consignment.</p>
+
+            </div>
+            <div class="col-sm-4">
+
+                <h4 class="font-weight-bold">Fashion and hanging garments</h4>
+                <p>For our fashion customers we have a number of trailers especially designed for road transport of hanging garments.</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" src="~/img/land.jpg" data-holder-rendered="true" style="width: 600px; height: 350px;">
+    </div>
+</div>
+<hr class="featurette-divider" style="margin-top: 50px; margin-bottom:50px">
+
+<div class="row featurette">
+    <div class="col-md-7 order-md-2">
+        <h2 id="sea" class="featurette-heading font-weight-bold">Ocean Freight</h2>
+        <p class="lead">We will ensure a fast delivery of your cargo by sea through the Port of Kotka or Helsinki in Finland. From anywhere in the world, your cargo will reach the destination as quickly and safely as possible. You can choose Full Container Load (FCL) or Less-than-Container Load (LCL) transportation. In Finland, most maritime freight is carried out through the Port of Kotka. Sea containers arriving at the Port of Kotka can be further transported by road to the desired address in any country in Europe or the CIS states. Free storage for 7 days in the port and fast customs clearance, thanks to our specialists, makes it possible to deliver the goods to the client with no extra charges in the shortest time.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img class="featurette-image img-fluid mx-auto" src="~/img/ocean.jpg" data-holder-rendered="true" style="width: 600px; height: 450px;">
+    </div>
+</div>
+<hr class="featurette-divider" style="margin-top: 50px; margin-bottom:50px">
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 id="air" class="featurette-heading font-weight-bold">Air Freight</h2>
+        <p class="lead">Air transportation is the fastest way to deliver cargo. The systematic nature of air travel allows you to accurately plan the time of delivery of the goods to the consignee. Cargo delivery by air transport has several advantages when transporting fragile, expensive, urgent goods of special importance. Our company can provide a full range of services for air transportation of goods to anywhere in the world. We will deliver your cargo in the shortest possible time, thanks to our efficient logistic schemes.</p>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" src="~/img/air.jpg" data-holder-rendered="true" style="width: 600px; height: 450px;">
+    </div>
+</div>

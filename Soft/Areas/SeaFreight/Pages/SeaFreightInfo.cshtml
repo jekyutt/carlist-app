@@ -1,0 +1,1108 @@
+﻿@page
+@model SemestriProject.Soft.Areas.SeaFreight.Pages.IndexModel
+@{ ViewData["Title"] = "Info"; }
+
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+        <h1 class="display-4 ">Containers types</h1>
+        <p class="lead my-3">Ocean freight is the best transport mode for the large cargo quantities, what do not require short transit time.</p>
+    </div>
+</div>
+<div class="container_types">
+    <div class="single_container">
+        <div class="row no_margin">
+            <div class="col-lg-4 container_image">
+                <img src="/img/containers1.svg">
+            </div>
+            <div class="col-lg-8 container_info">
+                <h4>Kuivlastikonteinerid</h4>
+                <div class="description">
+                    <p>20′ ja 40′ kuivlastikonteinerid on valmistatud alumiiniumist või terasest. Need sobivad enamike kaupade transportimiseks. Alumiiniumist kuivlastikonteinerite nimikoormus on veidi suurem kui teraskonteineritel ning terasest valmistatud kuivlastikonteinerite siseruum on veidi suurem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container_div">
+            <table class="container_type" style="text-align:center">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Konteineri kaal</th>
+                        <th>Sisemõõtmed</th>
+                        <th>Ukseava</th>
+                    </tr>
+                    <tr id="container_labels">
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Tüüp</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr style="text-align:center">
+                                        <td>brutomass</td>
+                                        <td>tühimass</td>
+                                        <td>netomass</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr style="text-align:center">
+                                        <td>pikkus</td>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                        <td>mahutavus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>20 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>24,000</td>
+                                        <td>2,370</td>
+                                        <td>21,630</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>5.898</td>
+                                        <td>2.352</td>
+                                        <td>2.394</td>
+                                        <td>33.20</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.343</td>
+                                        <td>2.280</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>40 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30,480</td>
+                                        <td>4,000</td>
+                                        <td>26,480</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>12.031</td>
+                                        <td>2.352</td>
+                                        <td>2.394</td>
+                                        <td>67.74</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.343</td>
+                                        <td>2.280</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="single_container">
+
+        <div class="row no_margin">
+            <div class="col-lg-4 container_image">
+                <img src="/img/containers2.svg">
+            </div>
+            <div class="col-lg-8 container_info">
+                <h4>Külmutuskonteinerid</h4>
+                <div class="description">
+                    <p>Külmutuskonteinereid või jahutuskonteinereid kasutatakse selliste kaupade transportimiseks, mis eeldavad transporti kontrollitud temperatuuril, nagu näiteks puuviljad, köögiviljad, piimatooted ja liha. Konteinerid on varustatud külmutusseadmega, mis on ühendatud transpordilaeva elektritoitesüsteemiga.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_div">
+
+            <table class="container_type">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Konteineri kaal</th>
+                        <th>Sisemõõtmed</th>
+                        <th>Ukseava</th>
+                    </tr>
+
+                    <tr id="container_labels">
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Tüüp</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>brutomass</td>
+                                        <td>tühimass</td>
+                                        <td>netomass</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>pikkus</td>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                        <td>mahutavus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>20 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>24,000</td>
+                                        <td>3,050</td>
+                                        <td>20,950</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>5.449</td>
+                                        <td>2.290</td>
+                                        <td>2.244</td>
+                                        <td>26.70</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.276</td>
+                                        <td>2.261</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>40 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30,480</td>
+                                        <td>4,520</td>
+                                        <td>25,960</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>11.690</td>
+                                        <td>2.250</td>
+                                        <td>2.247</td>
+                                        <td>57.10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.280</td>
+                                        <td>2.205</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="single_container">
+
+        <div class="row no_margin">
+            <div class="col-lg-4 container_image">
+                <img src="/img/containers3.svg">
+            </div>
+            <div class="col-lg-8 container_info">
+                <h4>Pealt lahtised konteinerid</h4>
+                <div class="description">
+                    <p>Pealt lahtised konteinerid on konteinerid, mille avatud ülaosa on katuse asemel kaetud hoopis presendiga. See võimaldab laadida ülemõõdulised veosed, nagu näiteks puit ja vanametall, konteinerisse ülevalt poolt. Pealt lahtistel konteineritel on aga sellegipoolest tavaliselt ka otsauksed, mis muudavad lastimis- ja mahalaadimistoimingud paindlikumaks.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_div">
+
+            <table class="container_type">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Konteineri kaal</th>
+                        <th>Sisemõõtmed</th>
+                        <th>Ukseava</th>
+                    </tr>
+
+                    <tr id="container_labels">
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Tüüp</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>brutomass</td>
+                                        <td>tühimass</td>
+                                        <td>netomass</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>pikkus</td>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                        <td>mahutavus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>20 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>24,000</td>
+                                        <td>2,580</td>
+                                        <td>21,420</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>5.629</td>
+                                        <td>2.212</td>
+                                        <td>2.311</td>
+                                        <td>32.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.330</td>
+                                        <td>2.263</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>40 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30,480</td>
+                                        <td>4,290</td>
+                                        <td>26,190</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>11.763</td>
+                                        <td>2.212</td>
+                                        <td>2.311</td>
+                                        <td>65.40</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.330</td>
+                                        <td>2.263</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="single_container">
+
+        <div class="row no_margin">
+            <div class="col-lg-4 container_image">
+                <img src="/img/containers4.svg">
+            </div>
+            <div class="col-lg-8 container_info">
+                <h4>Aluskonteinerid</h4>
+                <div class="description">
+                    <p>Aluskonteinerid sobivad eelkõige raskete veoste ja kaupade jaoks, mis tuleb laadida konteinerile pealt või külgedelt, nagu näiteks torud ja masinad. Saadaval on seinadega või seinadeta kokkupandavad ja mittekokkupandavad konteinerid.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_div">
+
+            <table class="container_type">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Konteineri kaal</th>
+                        <th>Sisemõõtmed</th>
+                        <th>Ukseava</th>
+                    </tr>
+
+                    <tr id="container_labels">
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Tüüp</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>brutomass</td>
+                                        <td>tühimass</td>
+                                        <td>netomass</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>pikkus</td>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                        <td>mahutavus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>20 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30,480</td>
+                                        <td>2,900</td>
+                                        <td>27,580</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>5.624</td>
+                                        <td>2.236</td>
+                                        <td>2.234</td>
+                                        <td>27.90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>40 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>34,000</td>
+                                        <td>5,870</td>
+                                        <td>28,130</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>11.786</td>
+                                        <td>2.236</td>
+                                        <td>1.968</td>
+                                        <td>51.90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="single_container">
+
+        <div class="row no_margin">
+            <div class="col-lg-4 container_image">
+                <img src="/img/containers5.svg">
+            </div>
+            <div class="col-lg-8 container_info">
+                <h4>Tekstiilikonteinerid</h4>
+                <div class="description">
+                    <p>Riidepuudele asetatud rõivaste jaoks mõeldud konteinerid annavad kliendile võimaluse kasutada nööri- või torusüsteemi või neid omavahel kombineerida. Tekstiilikonteinerid tagavad suurema paindlikkuse, suurema mahutavuse ning aitavad hoida kokku transpordi- ja käitlemiskuludelt.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_div">
+
+            <table class="container_type">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Konteineri kaal</th>
+                        <th>Sisemõõtmed</th>
+                        <th>Ukseava</th>
+                    </tr>
+
+                    <tr id="container_labels">
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Tüüp</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>brutomass</td>
+                                        <td>tühimass</td>
+                                        <td>netomass</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>pikkus</td>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                        <td>mahutavus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>20 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>24,000</td>
+                                        <td>2,240</td>
+                                        <td>21,760</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>5.898</td>
+                                        <td>2.352</td>
+                                        <td>2.394</td>
+                                        <td>33.20</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.343</td>
+                                        <td>2.280</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>40 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30,480</td>
+                                        <td>3,885</td>
+                                        <td>26,595</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>12.031</td>
+                                        <td>2.352</td>
+                                        <td>2.394</td>
+                                        <td>67.74</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.343</td>
+                                        <td>2.280</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="single_container">
+        <div class="row no_margin">
+            <div class="col-lg-4 container_image">
+                <img src="/img/containers6.svg">
+            </div>
+            <div class="col-lg-8 container_info">
+                <h4>Kõrged konteinerid</h4>
+                <div class="description">
+                    <p>Kõrged kuivlastikonteinerid on ühe jala võrra kõrgemad kui tavalised kuivlastikonteinerid. Kõrged konteinerid sobivad suurepäraselt kerge, mahuka või koguka veose transportimiseks.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_div">
+
+            <table class="container_type">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Konteineri kaal</th>
+                        <th>Sisemõõtmed</th>
+                        <th>Ukseava</th>
+                    </tr>
+
+                    <tr id="container_labels">
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Tüüp</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>brutomass</td>
+                                        <td>tühimass</td>
+                                        <td>netomass</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>pikkus</td>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                        <td>mahutavus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>laius</td>
+                                        <td>kõrgus</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>40 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30,480</td>
+                                        <td>3,980</td>
+                                        <td>26,500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>12.031</td>
+                                        <td>2.352</td>
+                                        <td>2.698</td>
+                                        <td>76.30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.340</td>
+                                        <td>2.585</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>45 ft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30,480</td>
+                                        <td>4,800</td>
+                                        <td>25,680</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>13.544</td>
+                                        <td>2.352</td>
+                                        <td>2.698</td>
+                                        <td>86.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2.340</td>
+                                        <td>2.585</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>

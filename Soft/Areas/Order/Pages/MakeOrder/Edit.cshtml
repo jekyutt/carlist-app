@@ -1,0 +1,34 @@
+﻿@page
+@using SemestriProject.Pages.Extensions
+@model SemestriProject.Soft.Areas.Order.Pages.MakeOrder.EditModel
+
+@{
+    Layout = "_Edit";
+}
+
+    <body>
+        @Html.EditControlsFor(m => m.Item.Id)
+        @Html.EditControlsFor(m => m.Item.Name)
+        @Html.EditControlsFor(m => m.Item.AddressRow)
+        @Html.EditControlsFor(m => m.Item.PostCode)
+        @Html.EditControlsFor(m => m.Item.City)
+        @Html.EditControlsFor(m => m.Item.Country)
+        @Html.EditControlsFor(m => m.Item.ContactName)
+        @Html.EditControlsFor(m => m.Item.Phone)
+        @Html.EditControlsFor(m => m.Item.EMail)
+        @Html.EditControlsFor(m => m.Item.Quantity)
+        @Html.EditControlsFor(m => m.Item.PackageType)
+        @Html.EditControlsFor(m => m.Item.Weight)
+        @Html.EditControlsFor(m => m.Item.Volume)
+        @Html.EditControlsFor(m => m.Item.Length)
+        @Html.EditControlsFor(m => m.Item.Width)
+        @Html.EditControlsFor(m => m.Item.Height)
+        @Html.EditControlsFor(m => m.Item.Value)
+        @Html.EditControlsFor(m => m.Item.GoodsDescription)
+        @Html.EditControlsFor(m => m.Item.DangerousGoods)
+        @Html.EditControlsFor(m => m.Item.TemperatureSensitive)
+        @Html.EditControlsFor(m => m.Item.ReadyForCollection)
+        @Html.EditControlsFor(m => m.Item.RequestedDeliveryTime)
+        @Html.EditControlsFor(m => m.Item.CustomerComments)
+        @Html.EditControlsFor(m => m.Item.AcceptTerms)
+    </body>

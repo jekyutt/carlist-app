@@ -1,0 +1,16 @@
+﻿@page
+@using SemestriProject.Pages.Extensions
+@model SemestriProject.Soft.Areas.RoadFreight.Pages.Baltic.DeleteModel
+
+@{
+    Layout = "_Delete";
+}
+
+    <body>
+        @Html.DisplayControlsFor(m => m.Item.Id)
+        @Html.DisplayControlsFor(m => m.Item.Direction)
+        @Html.DisplayControlsFor(m => m.Item.OrderTime)
+        @Html.DisplayControlsFor(m => m.Item.Loading)
+        @Html.DisplayControlsFor(m => m.Item.Departures)
+        @Html.DisplayControlsFor(m => m.Item.TravelTime)
+    </body>

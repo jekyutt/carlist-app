@@ -1,0 +1,49 @@
+﻿@page
+@using SemestriProject.Pages.Extensions
+@model SemestriProject.Soft.Areas.RoadFreight.Pages.Baltic.IndexModel
+
+@{
+    Layout = "_Index";
+    var page = Model.PageUrl;
+}
+@section Create
+{
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 ">BALTIC</h1>
+            <p class="lead my-3">BDK-LOGISTIC is one of the largest and most stable logistics companies in the European Union.</p>
+        </div>
+    </div> 
+}
+
+<body>
+<table class="table">
+    <thead>
+    @Html.TableHeaderFor(
+        new Link(Html.DisplayNameFor(m => m.Item.Id), Model.GetSortString(m => m.Id, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Direction), Model.GetSortString(m => m.Direction, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.OrderTime), Model.GetSortString(m => m.OrderTime, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Loading), Model.GetSortString(m => m.Loading, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Departures), Model.GetSortString(m => m.Departures, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.TravelTime), Model.GetSortString(m => m.TravelTime, page))
+        )
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Items)
+    {
+        <tr>
+            @Html.TableRowFor(
+                page,
+                item.Id,
+                Html.DisplayFor(modelItem => item.Id),
+                Html.DisplayFor(modelItem => item.Direction),
+                Html.DisplayFor(modelItem => item.OrderTime),
+                Html.DisplayFor(modelItem => item.Loading),
+                Html.DisplayFor(modelItem => item.Departures),
+                Html.DisplayFor(modelItem => item.TravelTime)
+                )
+        </tr>
+    }
+    </tbody>
+</table>
+</body>

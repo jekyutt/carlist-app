@@ -1,0 +1,16 @@
+﻿@page
+@using SemestriProject.Pages.Extensions
+@model SemestriProject.Soft.Areas.AirFreight.Pages.America.DetailsModel
+
+@{
+    Layout = "_Details";
+}
+
+    <body>
+        @Html.DisplayControlsFor(m => m.Item.Id)
+        @Html.DisplayControlsFor(m => m.Item.Direction)
+        @Html.DisplayControlsFor(m => m.Item.OrderTime)
+        @Html.DisplayControlsFor(m => m.Item.TypeOfCargo)
+        @Html.DisplayControlsFor(m => m.Item.AirplaneType)
+        @Html.DisplayControlsFor(m => m.Item.TravelTime)
+    </body>

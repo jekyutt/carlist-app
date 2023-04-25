@@ -1,0 +1,80 @@
+﻿@page
+@using SemestriProject.Pages.Extensions
+@model SemestriProject.Soft.Areas.Order.Pages.MakeOrder.IndexModel
+
+@{
+    Layout = "_Index";
+    var page = Model.PageUrl;
+}
+@section Create
+{
+    @Html.HypertextLinkFor(string.Empty, new Link(Constants.CreateNewLinkTitle, $"{page}/Create"))
+}
+
+<body>
+<table class="table">
+    <thead>
+    @Html.TableHeaderFor(
+        new Link(Html.DisplayNameFor(m => m.Item.Id), Model.GetSortString(m => m.Id, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Name), Model.GetSortString(m => m.Name, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.AddressRow), Model.GetSortString(m => m.AddressRow, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.PostCode), Model.GetSortString(m => m.PostCode, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.City), Model.GetSortString(m => m.City, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Country), Model.GetSortString(m => m.Country, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.ContactName), Model.GetSortString(m => m.ContactName, page)), 
+        new Link(Html.DisplayNameFor(m => m.Item.Phone), Model.GetSortString(m => m.Phone, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.EMail), Model.GetSortString(m => m.EMail, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Quantity), Model.GetSortString(m => m.Quantity, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.PackageType), Model.GetSortString(m => m.PackageType, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Weight), Model.GetSortString(m => m.Weight, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Volume), Model.GetSortString(m => m.Volume, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Length), Model.GetSortString(m => m.Length, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Width), Model.GetSortString(m => m.Width, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Height), Model.GetSortString(m => m.Height, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.Value), Model.GetSortString(m => m.Value, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.GoodsDescription), Model.GetSortString(m => m.GoodsDescription, page)),
+        new Link(Html.DisplayNameFor(m => m.Item.DangerousGoods), Model.GetSortString(m => m.DangerousGoods, page)), 
+        new Link(Html.DisplayNameFor(m => m.Item.TemperatureSensitive), Model.GetSortString(m => m.TemperatureSensitive, page)), 
+        new Link(Html.DisplayNameFor(m => m.Item.ReadyForCollection), Model.GetSortString(m => m.ReadyForCollection, page)), 
+        new Link(Html.DisplayNameFor(m => m.Item.RequestedDeliveryTime), Model.GetSortString(m => m.RequestedDeliveryTime, page)), 
+        new Link(Html.DisplayNameFor(m => m.Item.CustomerComments), Model.GetSortString(m => m.CustomerComments, page)), 
+        new Link(Html.DisplayNameFor(m => m.Item.AcceptTerms), Model.GetSortString(m => m.AcceptTerms, page))
+        )
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Items)
+    {
+        <tr>
+            @Html.TableRowFor(
+                page,
+                item.Id,
+                Html.DisplayFor(modelItem => item.Id),
+                Html.DisplayFor(modelItem => item.Name),
+                Html.DisplayFor(modelItem => item.AddressRow),
+                Html.DisplayFor(modelItem => item.PostCode),
+                Html.DisplayFor(modelItem => item.City),
+                Html.DisplayFor(modelItem => item.Country),
+                Html.DisplayFor(modelItem => item.ContactName),
+                Html.DisplayFor(modelItem => item.Phone),
+                Html.DisplayFor(modelItem => item.EMail),
+                Html.DisplayFor(modelItem => item.Quantity),
+                Html.DisplayFor(modelItem => item.PackageType),
+                Html.DisplayFor(modelItem => item.Weight),
+                Html.DisplayFor(modelItem => item.Volume),
+                Html.DisplayFor(modelItem => item.Length),
+                Html.DisplayFor(modelItem => item.Width),
+                Html.DisplayFor(modelItem => item.Height),
+                Html.DisplayFor(modelItem => item.Value),
+                Html.DisplayFor(modelItem => item.GoodsDescription),
+                Html.DisplayFor(modelItem => item.DangerousGoods),
+                Html.DisplayFor(modelItem => item.TemperatureSensitive),
+                Html.DisplayFor(modelItem => item.ReadyForCollection),
+                Html.DisplayFor(modelItem => item.RequestedDeliveryTime),
+                Html.DisplayFor(modelItem => item.CustomerComments),
+                Html.DisplayFor(modelItem => item.AcceptTerms)
+                )
+        </tr>
+    }
+    </tbody>
+</table>
+</body>

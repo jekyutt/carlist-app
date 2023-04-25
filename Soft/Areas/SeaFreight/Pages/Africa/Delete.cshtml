@@ -1,0 +1,16 @@
+﻿@page
+@using SemestriProject.Pages.Extensions
+@model SemestriProject.Soft.Areas.SeaFreight.Pages.Africa.DeleteModel
+
+@{
+    Layout = "_Delete";
+}
+
+    <body>
+        @Html.DisplayControlsFor(m => m.Item.Id)
+        @Html.DisplayControlsFor(m => m.Item.Direction)
+        @Html.DisplayControlsFor(m => m.Item.OrderTime)
+        @Html.DisplayControlsFor(m => m.Item.LiftingCapacity)
+        @Html.DisplayControlsFor(m => m.Item.ContainerType)
+        @Html.DisplayControlsFor(m => m.Item.TravelTime)
+    </body>

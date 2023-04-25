@@ -1,0 +1,17 @@
+﻿@page
+@using SemestriProject.Pages.Extensions
+@model SemestriProject.Soft.Areas.RoadFreight.Pages.RussiaAndCIS.EditModel
+
+@{
+    Layout = "_Edit";
+}
+
+    <body>
+        <input type="hidden" asp-for="Item.Direction" />
+        @Html.EditControlsFor(m => m.Item.Id)
+        @Html.EditControlsFor(m => m.Item.Direction)
+        @Html.EditControlsFor(m => m.Item.OrderTime)
+        @Html.EditControlsFor(m => m.Item.Loading)
+        @Html.EditControlsFor(m => m.Item.Departures)
+        @Html.EditControlsFor(m => m.Item.TravelTime)
+    </body>

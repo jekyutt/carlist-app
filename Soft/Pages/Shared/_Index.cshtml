@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = Model.PageTitle;
+}
+
+<p>
+    
+    <h4>@Model.PageSubTitle</h4>
+    @RenderSection("Create")
+</p>
+
+<form asp-page="./Index" method="get">
+    <input type="hidden" name="FixedFilter" value="@Model.FixedFilter" />
+    <input type="hidden" name="FixedValue" value="@Model.FixedValue" />
+    <div class="form-inline">
+        <p>
+            Find by:
+            &nbsp;
+            <input class="form-control" type="text" name="SearchString" value="@Model.SearchString" />
+            &nbsp;
+            <input type="submit" value="Search" class="btn btn-danger" />
+            &nbsp;
+            <a asp-page="./Index"
+               asp-route-fixedFilter="@Model.FixedFilter"
+               asp-route-fixedValue="@Model.FixedValue">Back to full List</a>
+        </p>
+    </div>
+</form>
+
+<p />
+
+@RenderBody()
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}

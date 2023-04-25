@@ -1,0 +1,34 @@
+﻿@page
+@using SemestriProject.Pages.Extensions
+@model SemestriProject.Soft.Areas.Order.Pages.MakeOrder.DetailsModel
+
+@{
+    Layout = "_Details";
+}
+
+    <body>
+        @Html.DisplayControlsFor(m => m.Item.Id)
+        @Html.DisplayControlsFor(m => m.Item.Name)
+        @Html.DisplayControlsFor(m => m.Item.AddressRow)
+        @Html.DisplayControlsFor(m => m.Item.PostCode)
+        @Html.DisplayControlsFor(m => m.Item.City)
+        @Html.DisplayControlsFor(m => m.Item.Country)
+        @Html.DisplayControlsFor(m => m.Item.ContactName)
+        @Html.DisplayControlsFor(m => m.Item.Phone)
+        @Html.DisplayControlsFor(m => m.Item.EMail)
+        @Html.DisplayControlsFor(m => m.Item.Quantity)
+        @Html.DisplayControlsFor(m => m.Item.PackageType)
+        @Html.DisplayControlsFor(m => m.Item.Weight)
+        @Html.DisplayControlsFor(m => m.Item.Volume)
+        @Html.DisplayControlsFor(m => m.Item.Length)
+        @Html.DisplayControlsFor(m => m.Item.Width)
+        @Html.DisplayControlsFor(m => m.Item.Height)
+        @Html.DisplayControlsFor(m => m.Item.Value)
+        @Html.DisplayControlsFor(m => m.Item.GoodsDescription)
+        @Html.DisplayControlsFor(m => m.Item.DangerousGoods)
+        @Html.DisplayControlsFor(m => m.Item.TemperatureSensitive)
+        @Html.DisplayControlsFor(m => m.Item.ReadyForCollection)
+        @Html.DisplayControlsFor(m => m.Item.RequestedDeliveryTime)
+        @Html.DisplayControlsFor(m => m.Item.CustomerComments)
+        @Html.DisplayControlsFor(m => m.Item.AcceptTerms)
+    </body>
